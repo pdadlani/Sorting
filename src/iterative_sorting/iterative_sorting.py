@@ -1,4 +1,4 @@
-# TO-DO: Complete the selection_sort() function below 
+# Complete the selection_sort() function below 
 def selection_sort(arr):
     # loop through n-1 elements
     for i in range(0, len(arr) - 1):
@@ -14,8 +14,17 @@ def selection_sort(arr):
     return arr
 
 
-# TO-DO:  implement the Bubble Sort function below
-def bubble_sort( arr ):
+# Implement the Bubble Sort function below
+def bubble_sort(arr):
+
+    sorting = True
+
+    while sorting:
+        sorting = False
+        for i in range(0, len(arr)-1):
+            if arr[i] > arr[i+1]:
+                arr[i], arr[i+1] = arr[i+1], arr[i]
+                sorting = True
 
     return arr
 
