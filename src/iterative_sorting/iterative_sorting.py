@@ -8,8 +8,8 @@ def selection_sort(arr):
             if arr[j] < arr[smallest_index]:
                 smallest_index = j
         # swap the elements
-        if smallest_index != i:
-            arr[smallest_index], arr[i] = arr[i], arr[smallest_index]
+        # if smallest_index != i:
+        arr[smallest_index], arr[i] = arr[i], arr[smallest_index]
 
     return arr
 
